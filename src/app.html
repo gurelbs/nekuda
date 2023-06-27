@@ -5,6 +5,26 @@
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		%sveltekit.head%
+		<style>
+			html,
+            body {
+                margin: 0;
+                padding: 0;
+				background: black;
+				height: 100vh;
+				display: grid;
+				place-items: center;
+				justify-content: center;
+            }
+			p, h1 {
+				color: white;
+				padding: 1rem;
+			}
+			a {
+				color: orange;
+				text-decoration: none;
+			}
+		</style>
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">%sveltekit.body%</div>
